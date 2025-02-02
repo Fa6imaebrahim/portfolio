@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator form input {
+    border: 0;
+    outline: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    font-size: 2rem;
+    color: #333;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease;
+}
+
+.calculator form input:hover {
+    background-color: #ddd;
+}
+
+.calculator form input:active {
+    background-color: #ccc;
+}
+
+.calculator form .display input {
+    width: 100%;
+    text-align: right;
+    font-size: 2.5rem;
+    background-color: #f0f0f0;
+    height: 80px;
+    padding: 10px;
+}
+
+form .btn-clear {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+form .btn-de {
+    background-color: #ffb84d;
+    color: white;
+}
+
+form .btn-equal {
+    background-color: #33cc33;
+    color: white;
+    width: 100%;
+}
+
+form .btn-equal:hover {
+    background-color: #28a828;
+}
+
+/* Center the calculator buttons */
+.calculator form div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.calculator form div input {
+    margin: 5px;  /* Reduced margin for better spacing */
+}
+
+/* Style for the Back to Home link */
+.btn-home {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+.btn-home:hover {
+    color: #007bff;
+}
